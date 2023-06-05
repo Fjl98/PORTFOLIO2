@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
+}
+
+.cuerpo1{
+    display: flex;
+    margin: 3em;
+    justify-content: center;
+    font-size: 2em;
+    border: 1px solid black;
+    border-radius: 10px;
+   padding: 0.3em;
+    
+}
+
+.proyecto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  
+    margin: 3em;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+.foto{
+    display: block;
+    margin-right: 1em;
+    width: 7em;
+}
+
+.pdfview{
+    margin: auto;
+    display: block;
+    width: 1200px;
+    height: 700px;
+    border-radius: 15px;
+}
