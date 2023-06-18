@@ -20,21 +20,7 @@ body{
     height: 100vh;
 }
 
-.cartel{
-    display: block;
-    width: 12em;
-    margin: 1em;
 
-}
-.carteles{
-    display: flex;
-    justify-content: center;
-    margin: 7em;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 2em;
-
-}
 
 .cuerpo1{
     display: flex;
@@ -57,11 +43,25 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 2em;
+    margin: 2em auto;
     font-size: 2em;
     border: 1px solid black;
     border-radius: 10px;
     padding: 0.1em;
+    width: 60%;
+
+}
+
+.cuerpo3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2em auto;
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 60%;
 
 }
 
@@ -105,22 +105,6 @@ body{
 /*TABLET*/
 @media only screen and (max-width: 991px) {
 
-    .cartel{
-        display: block;
-        width: 11em;
-        margin: 1em;
-    
-    }
-    .carteles{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 3em;
-        border: 1px solid black;
-        border-radius: 10px;
-        
-    
-    }
 
     .cuerpo1{
         display: flex;
@@ -135,14 +119,27 @@ body{
 
     .cuerpo2{
     
-        margin: 1em;
-        font-size: 1em;
+        margin: 1em auto;
+        font-size: 1.3em;
         border: 1px solid black;
         border-radius: 10px;
         padding: 0.1em;
-        width: 20px;
+        width: 60%;
     
         
+    }
+
+    .cuerpo3{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 2em auto;
+        font-size: 1.3em;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0.5em;
+        width: 60%;
+    
     }
 
     .proyecto2{
@@ -188,22 +185,6 @@ body{
 /*TELEFONO*/
 @media only screen and (max-width: 390px) {
 
-    .cartel{
-        display: block;
-        width: 9em;
-        margin: 1em;
-    
-    }
-    .carteles{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 3em;
-        border: 1px solid black;
-        border-radius: 10px;
-        
-    
-    }
 
     .cuerpo1{
         display: flex;
@@ -214,6 +195,30 @@ body{
         border-radius: 10px;
         padding: 0.3em;
         
+    }
+
+    .cuerpo2{
+    
+        margin: 1em auto;
+        font-size: 1em;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0.1em;
+        width: 60%;
+    
+        
+    }
+    .cuerpo3{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 2em auto;
+        font-size: 0.8em;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0.5em;
+        width: 60%;
+    
     }
 
     .proyecto2{

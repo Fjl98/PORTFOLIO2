@@ -51,7 +51,7 @@ a{
 
 .cuerpo1{
     font-size: 3.7em;
-    text-align: justify;
+    
 }
 
 .cuerpo2{
@@ -182,7 +182,7 @@ footer{
 
 .cuerpo1{
     font-size: 2.5em;
-    text-align: justify;
+    
 }
 
 .cuerpo2{
@@ -240,8 +240,9 @@ footer{
 
 
 .cuerpo1{
-    font-size: 1.6em;
-    text-align: justify;
+    font-size: 1.5em;
+    text-align: center;
+    
 }
 
 .cuerpo2{
