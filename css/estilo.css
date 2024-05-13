@@ -9,15 +9,38 @@ body{
     height: 100vh;
 }
 
+.navbar {
+  --bs-navbar-color: rgb(255 255 255);
+  --bs-navbar-active-color: rgba(154, 252, 74, 0.9);
+  --bs-navbar-hover-color: rgb(255, 0, 128);
 
-a:hover{
-    
-    color: black;
 }
+
+
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.tarjeta .fotocard {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  --bs-card-bg: #000000;
+}
+
+
 a{
-  text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  text-decoration: none !important;
 }
+
+
 
 .card{
     box-shadow: 1px 1px 12px black;
@@ -130,6 +153,8 @@ footer{
 }
 
 
+ 
+
   @-webkit-keyframes tracking-in-contract {
     0% {
       letter-spacing: 1em;
@@ -164,6 +189,7 @@ footer{
 /*TABLET*/
   @media only screen and (max-width: 991px) {
 
+   
     .perfil{
       margin-top: 3em;
       font-size: 1.5em;
@@ -204,14 +230,6 @@ footer{
  }
 
 
-
-
-
-
-
-
-
-
 }
 
 
@@ -223,6 +241,11 @@ footer{
 
 /*TELEFONO*/
   @media only screen and (max-width: 390px) {
+
+
+    
+
+
     .perfil{
       margin-top: 3em;
       font-size: 1em;
@@ -262,6 +285,9 @@ footer{
   border-left: 2px solid #f3f3f3;
   height:11em;
  }
+
+
+ 
 
 
 
