@@ -26,3 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.querySelector('.grid');
+    grid.scrollTo({ left: 0, behavior: 'smooth' });
+  });
+  

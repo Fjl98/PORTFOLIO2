@@ -275,36 +275,32 @@ nav a:hover {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #F8F8F8; /* Fondo blanco */
+  background-color: #F8F8F8;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 
-/* imagenes branding */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  grid-template-rows: repeat(3, 1fr); /* 3 filas iguales */
-  gap: 10px; /* Espaciado entre las imágenes */
-  width: 80%; /* Anchura de la rejilla */
-  height: 70%; /* Altura de la rejilla */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 80%;
+  height: 70%;
   box-sizing: border-box;
 }
 
-/* Elementos de la rejilla */
 .grid-item {
-  background-color: #F8F8F8; /* Color de fondo (imagen de ejemplo) */
-  border: 2px solid rgb(27, 27, 27); /* Líneas negras entre las fotos */
+  background-color: #F8F8F8;
+  border: 2px solid rgb(27, 27, 27);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  color: rgb(27, 27, 27);
 }
+
 
 /* Sección inferior derecha (herramienta y logo) */
 .tool-section {
@@ -914,11 +910,11 @@ nav a:hover {
 }
 
   .project-title {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .project-subtitle {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .project-description {
@@ -1032,16 +1028,65 @@ nav a:hover {
     grid-template-columns: 1fr; /* Una sola columna */
   }
 
-  .grid {
-    grid-template-columns: 1fr; /* Una sola columna */
-    grid-template-rows: auto;
-  }
+
+
+
+/* Contenedor principal */
+.grid-section {
+  height: 50vh;
+  overflow-x: hidden; /* Evita desbordamiento horizontal */
+  position: relative;
+  width: 100vw;
+  padding: 10px 0;
+}
+
+/* Contenedor del carrusel */
+.grid {
+  display: flex;
+  gap: 10px; /* Espaciado entre elementos */
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Ajuste automático */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave */
+  margin: 0; /* Asegúrate de que no haya márgenes */
+  padding: 0; /* Asegúrate de que no haya padding */
+}
+
+/* Elementos del carrusel */
+.grid-item {
+  flex: 0 0 auto; /* Evita que los elementos se redimensionen */
+  scroll-snap-align: start; /* Ajusta el inicio de cada elemento */
+  width: 200px; /* Ancho de cada imagen */
+  height: 150px; /* Altura de cada imagen */
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+  border-radius: 8px;
+}
+
+/* Ocultar scrollbars en navegadores modernos */
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Opcional: agrega un espaciado inicial para garantizar visibilidad */
+.grid {
+  scroll-padding-left: 0; /* Asegura que el inicio del carrusel sea visible */
+}
+
+
+
 
 
   .tool-section {
-    position: static; /* Cambia posición fija */
+
     text-align: center;
     margin-top: 20px;
+    order: 2;
   }
 
   .blocks-container {
